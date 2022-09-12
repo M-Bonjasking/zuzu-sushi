@@ -46,12 +46,37 @@
     <div class="text-center">
         <span>
             <?php
+              setlocale(LC_ALL, 'dutch');
 
+              echo strftime("<b>vandaag is %A %e %B %Y <b></b><br>");
+              echo strftime("bezorgtijd is vanaf nu: %R");
             ?>
         </span>
     </div>
-
+       <br>
 </section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card" style="...">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card" style="...">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="footer bg-dark text-white mt-3">
     <div class="container">
         <div class="row">
