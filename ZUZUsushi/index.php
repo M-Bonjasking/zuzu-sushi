@@ -10,7 +10,7 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light text-white bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,13 +18,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.php">Home</a>
-                <a class="nav-item nav-link" href="#">bezorging</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                <a class="nav-item nav-link active" href="index.php">ZUZU</a>
+                <a class="nav-item nav-link" href="#">home</a>
+                <a class="nav-item nav-link" href="#">bestellen</a>
             </div>
         </div>
-    </div>
 </nav>
 
 <div class="header-image">
@@ -43,24 +41,34 @@
             <p class="fw-lighter">text placeholder</p>
         </div>
     </div>
-    <div class="text-center">
-        <span>
+    <div class="row">
+    <div class="col-sm-4">
+        <h5 class="text-center">Vandaag is het
             <?php
-              setlocale(LC_ALL, 'dutch');
-
-              echo strftime("<b>vandaag is %A %e %B %Y <b></b><br>");
-              echo strftime("bezorgtijd is vanaf nu: %R");
+              $date = date("l j F o");
+              echo $date;
             ?>
-        </span>
+        </h5>
     </div>
-       <br>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <h5 class="text-center">bezorgtijd vanaf nu:
+                <?php
+                $date = date("G:i");
+                echo $date;
+                ?>
+            </h5>
+        </div>
+    </div>
 </section>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
             <div class="card" style="...">
-                <img src="" class="card-img-top" alt="...">
+                <img src="img/sushiimage1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
@@ -69,7 +77,7 @@
 
         <div class="col-sm-6">
             <div class="card" style="...">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="img/sushiimage2.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
