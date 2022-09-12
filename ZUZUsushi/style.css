@@ -1,5 +1,11 @@
 
 
-body {
-    background-image: url("/ZUZUsushi/img/sushiheader.png")
+.header-image {
+    background-image: url("/ZUZUsushi/img/sushiheader.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-container {
+    width: 30%;
 }
